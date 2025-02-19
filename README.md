@@ -78,14 +78,11 @@ Decrypted message: Hello, this is a secret!
 - **Ashutosh Mitra** – Developer
 - **Channabasava Yadav & Vignesh M (Edunet)** – Mentors
 
-## License
-This project is licensed under the MIT License. Feel free to modify and enhance it!
-
 ## Acknowledgment
 Special thanks to **Channabasava Yadav and Vignesh M from Edunet** for their guidance and mentorship in completing this project.
 
 ## Contact
 For any queries or suggestions, contact:
 - **GitHub**: [AshutoshMitraJi](https://github.com/AshutoshMitraJi)
-- **Email**: [YourEmail@example.com]
+- **Email**: [ashutoshmitra110@gmail.com]
 
