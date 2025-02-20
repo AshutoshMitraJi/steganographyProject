@@ -12,6 +12,7 @@ This project implements an image-based steganography technique to securely hide 
 
 ## Technologies Used
 - **Java** – Core programming language.
+- **Python** - Simplicity.
 - **OpenCV** – Image processing library.
 - **BufferedImage API** – For image manipulation in Java.
 - **GitHub** – Version control and collaboration.
