@@ -22,6 +22,7 @@ To set up and run this project locally, follow these steps:
 
 ### Prerequisites
 - Install **Java Development Kit (JDK 8 or higher)**
+- Install **Python**
 - Install **OpenCV library**
 
 ### Steps to Run
@@ -35,24 +36,31 @@ To set up and run this project locally, follow these steps:
    ```
 3. Compile the Java files:
    ```sh
-   javac ImageEncryption.java ImageDecryption.java
+   javac encrypImg.java
    ```
-4. Run the Encryption Program:
    ```sh
-   java ImageEncryption
+   javac decrypImg.java
+   ```
+5. Run the Encryption Program:
+   ```sh
+   python stego.py
+   ```
+   ```sh
+   java encrypImg
    ```
    - Enter the secret message and passcode when prompted.
    - The encrypted image will be saved as `encryptedImage.png`.
-5. Run the Decryption Program:
+7. Run the Decryption Program:
    ```sh
-   java ImageDecryption
+   java decrypImg
    ```
    - Enter the correct passcode to retrieve the hidden message.
 
 ## Usage
 1. **Encrypt a Message:**
    - The program takes an image (`pic.png`) and hides the entered message within its pixel data.
-   - It generates an encrypted image (`encryptedImage.png`) containing the hidden message.
+   - The Java code for Image Encyption generates an encrypted image (`encryptedImage.png`) containing the hidden message.
+   - The Python code for Image Encyption generates an encrypted image (`encryptedImage.jpg`) containing the hidden message.
 2. **Decrypt a Message:**
    - The program reads `encryptedImage.png`, extracts the hidden message, and verifies the passcode.
    - If the passcode matches, it displays the decrypted message.
@@ -85,5 +93,5 @@ Special thanks to **Channabasava Yadav and Vignesh M from Edunet** for their gui
 ## Contact
 For any queries or suggestions, contact:
 - **GitHub**: [AshutoshMitraJi](https://github.com/AshutoshMitraJi)
-- **Email**: [ashutoshmitra110@gmail.com]
+- **Email**: ashutoshmitra110@gmail.com
 
