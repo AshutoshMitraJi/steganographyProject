@@ -1,5 +1,6 @@
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileWriter;
 import java.util.Scanner;
 import javax.imageio.ImageIO;
 
@@ -8,11 +9,12 @@ public class encrypImg {
         try {
             Scanner scanner = new Scanner(System.in);
             BufferedImage img = ImageIO.read(new File("pic.png"));
-            
+            FileWriter writer = new FileWriter("pw.txt");
             System.out.print("Enter secret message: ");
             String msg = scanner.nextLine();
             System.out.print("Enter a passcode: ");
             String password = scanner.nextLine();
+            writer.write(password);
             String combinedTxt = msg + "::" + password;
             
             int width = img.getWidth();
@@ -20,7 +22,6 @@ public class encrypImg {
             
             int n = 0, m = 0, z = 0;
             
-            // Loop to embed each character of the message into the image
             for (int i = 0; i < combinedTxt.length(); i++) {
                 int asciiValue = (int) combinedTxt.charAt(i);
                 int pixel = img.getRGB(m, n);
@@ -44,9 +45,9 @@ public class encrypImg {
             System.out.println("Encryption Completed. Encrypted image saved as encryptedImage.png");
             
             scanner.close();
+            writer.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 }
-
